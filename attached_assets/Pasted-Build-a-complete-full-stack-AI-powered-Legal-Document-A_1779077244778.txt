@@ -1,0 +1,212 @@
+Build a complete full-stack AI-powered Legal Document Analyzer web application using React, Vite, Tailwind CSS, Node.js/Express, and OpenAI API.
+
+The application should look modern, professional, and production-ready with a premium legal-tech design theme using dark blue, white, slate, and gold accent colors.
+
+==================================================
+TECH STACK
+==================================================
+
+Frontend:
+- React + Vite
+- Tailwind CSS
+- React Router DOM
+- Framer Motion
+- Lucide React icons
+
+Backend:
+- Node.js + Express
+
+AI:
+- OpenAI GPT-4o-mini API
+
+Database:
+- Firebase Firestore or MongoDB
+
+File Handling:
+- PDF upload support
+- Image upload support (PNG/JPG/JPEG)
+- PDF text extraction
+
+==================================================
+MAIN FEATURES
+==================================================
+
+1. Dashboard Page
+- Show total uploaded documents
+- Show completed analyses
+- Show currently analyzing documents
+- Show recent uploaded documents
+- Add filtering by document type:
+  - contract
+  - agreement
+  - nda
+  - lease
+  - employment agreement
+  - partnership agreement
+- Beautiful stats cards
+- Responsive layout
+- Sidebar navigation
+
+2. Analyze Document Page
+- Drag and drop upload area
+- File picker
+- Preview uploaded file
+- Document name input
+- Document type selector dropdown
+- Analyze button
+- Animated progress bar during analysis
+- Loading animations
+
+3. AI Legal Analysis
+When user uploads a legal document:
+- Extract text from PDF or image
+- Send extracted text to OpenAI
+- AI should return structured JSON with:
+  - parties involved
+  - key dates
+  - clause summaries
+  - extracted entities
+  - risks
+  - overall summary
+
+Use this AI prompt internally:
+
+"You are a legal AI assistant. Analyze this legal document and provide a structured summary.
+
+Extract:
+1. All parties involved
+2. Key dates
+3. Clause summaries
+4. Obligations
+5. Penalties
+6. Risks
+7. Important legal entities
+8. Overall executive summary
+
+Use simple language but preserve legal meaning."
+
+4. Document Details Page
+Show:
+- Executive summary
+- Parties involved
+- Key dates
+- Risks section
+- Clause analysis table
+- Expandable rows for original clause text
+- Entity badges with colors
+
+Entity badge types:
+- Date
+- Obligation
+- Penalty
+- Risk
+- Party
+
+5. Layout
+- Professional sidebar
+- Responsive mobile design
+- Glassmorphism and soft shadows
+- Modern animations
+- Clean typography
+
+==================================================
+UI REQUIREMENTS
+==================================================
+
+Use:
+- Rounded cards
+- Soft shadows
+- Framer motion animations
+- Hover effects
+- Loading skeletons
+- Gradient buttons
+- Professional legal-tech appearance
+
+==================================================
+PROJECT STRUCTURE
+==================================================
+
+Generate clean scalable structure:
+
+src/
+  pages/
+  components/
+    dashboard/
+    analyze/
+    details/
+  layouts/
+  services/
+  utils/
+  hooks/
+
+==================================================
+COMPONENTS TO CREATE
+==================================================
+
+Dashboard Components:
+- StatsCards
+- DocumentCard
+
+Analyze Components:
+- FileUploadZone
+- DocumentTypeSelector
+- AnalysisProgress
+
+Details Components:
+- ClauseTable
+- EntityBadge
+- KeyDatesCard
+- PartiesCard
+- RisksCard
+
+==================================================
+FUNCTIONALITY
+==================================================
+
+- Save analyzed documents in database
+- Store uploaded file URLs
+- Show analysis history
+- Add loading and error handling
+- Responsive for desktop and mobile
+
+==================================================
+API FEATURES
+==================================================
+
+Backend should include:
+- File upload endpoint
+- OpenAI analysis endpoint
+- Document CRUD routes
+
+==================================================
+BONUS FEATURES
+==================================================
+
+If possible add:
+- Download analysis as PDF
+- Search documents
+- Dark mode
+- Authentication
+- AI confidence scores
+
+==================================================
+IMPORTANT
+==================================================
+
+Generate:
+1. Complete frontend
+2. Backend server
+3. API integration
+4. Tailwind configuration
+5. Routing
+6. Database setup
+7. Environment variable setup
+8. Package installation commands
+9. Folder structure
+10. Working production-ready code
+
+The app should run immediately after:
+npm install
+npm run dev
+
+Use best practices and clean reusable code throughout the project.
